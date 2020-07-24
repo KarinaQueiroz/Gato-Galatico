@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.full-picture{
+    width: 100vw;
+    height: 100vh; 
+    background-image: url('../img/fundo-universo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    width: 28%;
+    height: 50%;
+    background-color: #d8c5e0; 
+    padding: 40px 0 0px;
+}
+
+.avatar{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.avatar img{
+    width: 145px;
+    height: 140px;
+    border-radius: 120px;
+    border: solid 15px #d8c5e0;
+}
+
+.avatar::after{
+    content: '';
+    border-bottom: 1px solid #000;
+    width: 100%;
+    opacity: 0.3;
+
+    /* 
+    //outra forma de fazer a linha é com o position, mas pode dar erro no responsivo,
+    neste caso coloca o relative no avatar img e faz no before sem after// foi acrescentado o flex e o items no avatar//////
+
+    border: solid 1px #000;
+    position: absolute;
+    top: 35%;
+    left: 36%;
+    width: 28%;
+    opacity: 0.3; */
+}
+
+.avatar::before{
+    content: ''; 
+    border-bottom: 1px solid #000;
+    width: 100%;
+    opacity: 0.3;
+}
+
+.text{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2.5;
+    font-weight: 300;
+    opacity: 0.3;
+    letter-spacing: 3.5px;
+
+}
+
+.text h1{
+    font-size: 35px;
+    letter-spacing: 4.5px;
+}
+
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0.3;
+}
+
+.rede .fab{
+    width: 30px;
+    height: auto;
+    border: solid 1px #000 ;
+    border-radius: 35px;
+    padding: 13px;
+    margin: 15px;
+    text-align: center;
+}
+
+.rede .fab:hover{
+    border: solid 1px #fff;
+    border-radius: 35px;
+    color: #fff;
+
+}
